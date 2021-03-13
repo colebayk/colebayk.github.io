@@ -1,0 +1,51 @@
+
+@media only screen and (min-width: 35rem) {
+
+
+nav ul.hide {
+    display: block;
+    
+}
+
+
+nav {
+    display: block;
+    
+}
+
+nav ul {
+    padding-left: .5rem;
+}
+
+nav ul li a{
+    float: left;
+    border-radius: 10px;
+    border: 1px solid rgb(36, 217, 230);
+    border-radius: 10px;
+    margin: 0 2% 0 0;
+}
+
+
+.ham{
+    display: none;
+}
+
+
+.active {
+    background-color: chartreuse;
+}
+
+
+.images {
+   
+    grid-template-columns: 300px 300px;
+    
+}
+
+
+figure img:hover {
+    box-shadow: 10px 10px 10px gray ;
+}
+
+
+}

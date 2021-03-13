@@ -15,3 +15,5 @@ if (tempnumber <=50 && speednumber >3) {
 } else {
        document.getElementById("chill").textContent = "No wind Chill Today"
 }
+
+
