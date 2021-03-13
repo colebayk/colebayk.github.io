@@ -1,12 +1,14 @@
 fetch('https://byui-cit230.github.io/weather/data/towndata.json')
-  .then((response) => response.json())
-  .then((dice) => {
-    console.log(dice);
-    console.log(dice.towns[6]);
+  .then(function(response) {
+   return  response.json();
+  })
+  .then(function(jsonObject) {
+      console.table(jsonObject);
 
+      const towns = jsonObject['towns'];
 
-    for (let i = 0; i < dice.towns.length; i++) {
-        if (i == 1 || i == 6 || i == 5) {
+    for (let i = 0; i < towns.length; i++) {
+        if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
             let card = document.createElement('div');
             
             let info = document.createElement('section');
@@ -19,16 +21,18 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
             let rain = document.createElement('p');
             let image = document.createElement('img');
    
-            name.textContent = dice.towns[i].name;
-            motto.textContent = dice.towns[i].motto;
-            date.textContent = 'Year Founded: ' + dice.towns[i].yearFounded;
-            people.textContent = 'Population: ' + dice.towns[i].currentPopulation;
-            rain.textContent = 'Annual Rain Fall: ' + dice.towns[i].averageRainfall + 'in';
-            image.setAttribute('src', 'images/'+dice.towns[i].photo);
-            image.setAttribute('alt', dice.towns[i].name + ' Hometown');
-            image.setAttribute('width', '400');
-            image.setAttribute('height', '200');
+            name.textContent = towns[i].name;
+            motto.textContent = towns[i].motto;
+            date.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            people.textContent = 'Population: ' + towns[i].currentPopulation;
+            rain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + 'in';
+            image.setAttribute('src', 'images/'+ towns[i].photo);
+            image.setAttribute('alt', towns[i].name + ' Hometown');
             
+            
+            photo.appendChild(image);
+            card.appendChild(photo);
+
             info.appendChild(name);
             info.appendChild(motto);
             info.appendChild(date);
@@ -36,8 +40,7 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
             info.appendChild(rain);
             card.appendChild(info);
             
-            photo.appendChild(image);
-            card.appendChild(photo);
+            
 
             document.getElementById('cards').appendChild(card);
         }
