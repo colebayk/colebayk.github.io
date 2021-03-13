@@ -1,0 +1,210 @@
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;  
+}
+
+
+header {
+    background-color:rgb(37, 46, 85) ;
+    color: white;
+    margin:0;
+}
+
+.logo {
+    display:block;
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.change {
+    display: block;
+}
+
+.ham {
+    display: block;;
+    float: right;
+   scroll-margin-top: 10rem;
+}
+
+
+
+nav {
+    background-color:rgb(0, 217, 255);
+
+}
+
+nav button  {
+    color: rgba(0, 0, 0, 0.233);
+    float:right;
+    padding:.2rem;
+    color:turquoise
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li a:hover {
+    background-color: rgba(252, 17, 174, 0.747);
+}
+
+nav ul.hide {
+    display:none;
+    
+}
+
+nav ul li.active a{
+    background-color: rgb(47, 82, 50);
+
+}
+
+main {
+    min-height: 8rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.placeholder {
+    margin: 1rem 10%;
+}
+
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+section #h2 {
+    text-decoration: transparent;
+}
+
+section .forecast{
+    display: none;
+}
+
+
+section .forecast-grid  {
+        display: none;}
+
+        
+   .banner {
+    display: block;
+}
+
+.weather1 {
+    display: none;
+}
+
+
+main h2 {
+    display: block;
+}
+
+.article Picture {
+  
+   margin: 0 0 0 2%;
+   width: 20%;
+   float: right;
+}
+
+article picture.image img {
+    max-width: 100%;
+}
+
+.mine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; 
+}
+
+.Location {
+    
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: powderblue;
+}
+
+
+.telephone {
+    
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: powderblue;
+}
+
+.map {
+    display: none;
+}
+
+
+
+
+
+footer{
+    text-align: center;
+    background-color:rgb(37, 46, 85);
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: medium;
+    margin: 0.5rem auto;
+    color: whitesmoke;
+}
+
+.social img {
+    display: block;
+    float: left;
+    width: 4%;
+    margin: 2px;
+}
+
+div#message{
+    position: absolute;
+    background-color: rgb(153, 89, 161);
+    max-width: 50%;
+    padding: 1rem;
+    text-align: center;
+}
+
+div.showme{
+    display: block;
+}
+
+div.hideme{
+    display: none;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  Main footer {
+    max-width: 67rem;
+    
+}

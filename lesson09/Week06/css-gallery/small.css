@@ -1,0 +1,140 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+
+header {
+    background-color: rgb(43, 43, 109);
+    color: white;
+    padding-top: 0;
+}
+
+.logo {
+    display:block;
+    float: left;
+    margin: .5rem 2% 0 0;
+}
+
+
+.change {
+    display: block;
+}
+
+.ham {
+    display: block;;
+    float: right;
+   scroll-margin-top: 10rem;
+}
+
+
+
+nav {
+    background-color:rgb(0, 217, 255);
+
+}
+
+nav button  {
+    color: rgba(0, 0, 0, 0.233);
+    float:right;
+    padding:.2rem;
+    color:turquoise
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li a:hover {
+    background-color: rgba(252, 17, 174, 0.747);
+}
+
+nav ul.hide {
+    display:none;
+    
+}
+
+nav ul li.active a {
+    background-color: rgb(208, 218, 209);
+
+}
+
+
+.images {
+      display: grid;
+      grid-template-columns: 300px;
+      grid-gap:20px;
+      justify-content: center;
+}
+
+figure figcaption {
+    text-align: center;
+    color: rgb(49, 49, 150);
+
+}
+
+footer{
+    text-align: center;
+    background-color:rgb(37, 46, 85);
+    display: block;
+    border: 1px solid black;
+    padding: .5rem 8%;
+    font-size: medium;
+    margin: 0.5rem auto;
+    color: whitesmoke;
+    max-width: 80%;
+}
+
+.social img {
+    display: block;
+    float: left;
+    width: 4%;
+    margin: 2px;
+}
+
+
+img[data-src] {
+    filter: blur(1em);
+  }
+  
+  img {
+    filter: blur(0em);
+    transition: filter 4s;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston town page</title>
+    <meta name="description" content="Week 04 Assignment byui online learning">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="snow-citycss/small.css" rel="stylesheet">
+    <link href="snow-citycss/medium.css" rel="stylesheet">
+    <link href="snow-citycss/large.css" rel="stylesheet">
+    <link href="snow-citycss/normalize.css" rel="stylesheet">
+
+</head>
+
+<body>
+     <div class="welcome">
+    <header class="clearfix">
+        <div class="logo">
+            <img src="img/rsz_1rsz_weather_2.jpg" alt="logo">
+        </div>
+        <div class="change">
+            <h1>Climate Change</h1>
+            <p>Motto: ever green</p>
+        </div>
+        <div class="ham">
+            <button onclick="togglemenu()">&#8801;</button>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Spring</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+        </ul>
+    </nav>
+    <main class="swoncity">
+
+        <h2><strong>Fill out this information with block letters</strong></h2>
+
+        <form    method="GET"  action="thanks.html" class="content" autocomplete="on">
+            <fieldset class="set1">
+            <div class="form1">
+                <label for="name"> Full name: </label><br>
+                <input type="text" id="name" name="name" required>
+            </div><br>
+            <div class="form1">
+                <label for="email"> Email: </label> <br>
+                <input type="email" id="email" placeholder="user@gmail.com" autocomplete="email">
+            </div><br>
+
+            <div class="form1">
+                <label for="phone"> Phone Number: </label><br>
+                <input type="tel" id="phone" name="phone" placeholder="#########" required >
+            </div><br>
+
+            <div class="form1">
+                <label for="zip"> zip code: </label><br>
+                <input type="number" id="zip" name="zipcode" required>
+            </div><br>
+        </fieldset>
+        <fieldset class="set1">
+            <div class="form1">
+                <label for="date"> storm date: </label><br>
+                <input type="date" id="date" name="date">
+            </div><br>
+
+            <div class="form1">
+                <label >Storm Type:</label><br>
+                <input list="ticklist">
+                <datalist id="ticklist">
+                    <option value="Flash flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunder Storm">
+                    <option value="Tornado">
+                </datalist>
+            </div> <br>
+
+            <div class="form1">
+                <label class="mine" for="storm"> storm Severity &nbsp;&nbsp;&nbsp;
+                    <input type="range" id="storm" value="5" min="1" max="10" step="1" list="stormseverity"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="stormvalue">5</span>
+                </label>
+                <datalist id="stormseverity">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+            </div> <br>
+
+            <div class="form1">
+                <label for="storm2">Storm Region:</label>
+                <select id="storm2" name="storm2">
+                    <option disabled selected>Select Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish haven">Fish Haven</option>
+                </select>
+            </div><br>
+
+            <div class="form1">
+                <label> user in-danger level: </label><br>
+                <label for="danger"> Yes </label>
+                <input type="radio" id="danger" name="danger">
+                <label for="maybe"> Maybe </label>
+                <input type="radio" id="maybe" name="danger">
+                <label for="no">No </label>
+                <input type="radio" id="no" name="danger">
+            </div><br>
+        </fieldset>
+
+        <fieldset class="set1">
+            <div class="form2">
+                <label> Additional Information or Comments </label><br>
+                <textarea name="Comments" rows="10" cols="40"></textarea>
+            </div>
+    
+            <div class="form2">
+                <label> <strong>submit form </strong></label><br>
+               <input type="submit" value="Request Submit" class="submit">
+            </div>
+
+        </fieldset>
+
+        </form>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="social">
+            <a href="www.facebook.com"><img src="img/facebook.png" alt="facebook link"></a>
+            <a href="www.youtube.com"><img src="img/youtube.png" alt="youtube link"></a>
+            <a href="www.twitter.com"><img src="img/twitter.png" alt="twitter link"></a>
+        </div>
+        <div class="footer">
+            <p> &copy;| Colebay Kaps Kamanda | 2021 reserved |Last Updated:<span id="lastupdated"></span></p>
+        </div>
+
+        <script src="js/storm.js"></script>
+    </footer>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;  
+}
+
+
+header {
+    background-color:rgb(37, 46, 85) ;
+    color: white;
+    margin:0;
+}
+
+.logo {
+    display:block;
+    float: left;
+    margin: 0 2% 0 0;
+    padding-left: 2rem;
+}
+
+.change {
+    display: block;
+}
+
+.ham {
+    display: block;;
+    float: right;
+   scroll-margin-top: 10rem;
+}
+
+
+
+nav {
+    background-color:rgb(122, 153, 158);
+
+}
+
+nav button  {
+    color: white;
+    float:right;
+    padding:.2rem;
+    color:turquoise
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    text-decoration: none;
+    color: blanchedalmond;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li a:hover {
+    background-color: rgba(252, 17, 174, 0.747);
+}
+
+nav ul.hide {
+    display:none;
+    
+}
+
+nav ul li.active a {
+    background-color: rgb(56, 105, 59);
+
+}
+
+picture {
+    display: block;
+    width: 100%;
+}
+
+picture img {
+    width: 100%;
+}
+
+
+.holder {
+ padding: .5rem 2%;
+    
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.article h3 {
+    color: red;
+}
+.img {
+    width: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background-color: whitesmoke;
+}
+.contact h3 {
+    color: red;
+ }
+
+.img img {
+    width: 100%;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+#cards { padding: 1rem 2%;}
+#cards div section { text-align: center; border: 1px solid black; background-color: whitesmoke;}
+#cards div section h2 {margin: 0; color: red;}
+#cards div section h3 {margin: 0; color: rgb(113, 196, 211); font-weight: normal;}
+#cards div figure  {margin: 0; width: 100%;}
+#cards div figure img {width: 100%; height: auto;}
+
+
+
+footer{
+    background-color:rgb(37, 46, 85) ;
+    color: white;
+    text-align: center;  
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

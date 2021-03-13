@@ -1,0 +1,46 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    nav ul.hide {
+        display: block;
+        
+    }
+    
+    
+    nav {
+        display: block;
+        
+    }
+
+    nav ul li a{
+        float: left;
+        border-radius: 10px;
+        border: 1px solid rgb(36, 217, 230);
+        border-radius: 10px;
+        margin: 0 2% 0 0;
+    }
+
+
+    .ham{
+        display: none;
+    }
+
+    .swoncity{
+        padding: 0.5rem 2%;
+    }
+
+    .welcome {
+        padding: 0.1rem 2%;
+        background-color: whitesmoke;
+    }
+
+   .content{
+    grid-template-columns: 1fr 1fr ;
+   }
+
+   fieldset{
+       border: 1px black solid;
+       border-radius: 10px;
+   }
+ 
+} /*end medium */

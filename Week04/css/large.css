@@ -1,0 +1,57 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+
+
+    .header {
+            display:block;
+        padding-left: 8rem;}
+
+    .weather {
+        margin-top: 1.5rem;
+        padding-left:.5rem;
+    }
+            
+    nav button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        padding-left: 20rem;
+        
+    }
+    
+    nav ul.hide {
+        display: block;
+    }
+    
+    
+    nav ul  {
+        margin-left: 2%;
+    }
+    
+    nav ul li a{
+        float: left;
+        color: black;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid black;
+        padding: .6rem 1rem;
+    }
+
+    main h2 {
+        color: teal;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+
+} /*end large */

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preston town page</title>
+  <meta name="description" content="Week 04 Assignment byui online learning">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="clearfix">
+    <div class="logo">
+      <img src="img/rsz_1rsz_weather_2.jpg" alt="logo">
+    </div>
+    <div class="change">
+      <h1>Climate Change</h1>
+      <p>Motto: ever green</p>
+    </div>
+    <div class="ham">
+      <button onclick="togglemenu()">&#8801;</button>
+    </div>
+  </header>
+  <nav class="clearfix">
+    <ul id="primaryNav" class="hide">
+      <li> <a href="index.html">Home</a></li>
+      <li class="active"><a href="preston.html">Preston</a></li>
+      <li><a href="#">Soda Spring</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">gallery</a></li>
+    </ul>
+  </nav>
+  <main class="placeholder">
+    <div id="message">Alarm: Today is friday! Gathering parade @ saint george</div>
+    <div id="h2">
+      <h2>Preston Idaho</h2>
+    </div>
+    <section class="hero">
+      <div class="weather1">
+        <h3>Weather Summary</h3>
+        <div class="summary">
+          <p> Currently: <span>Sunny</span></p>
+          <p> Current Temperature: <span id="temp">28</span>&deg;C</p>
+          <p>Wind speed: <span id="speed"> 60</span> Mph</p>
+          <p id="chill">Wind chill</p>
+
+        </div>
+      </div>
+    </section>
+
+    <picture class="banner">
+      <source media="(max-width: 500px)" srcset="img/images/heroimage500.jpg">
+      <source media="(max-width: 800px)" srcset="img/images/hero-image800.jpg">
+      <img class="bs" src="img/images/hero.jpg" alt="landscape">
+    </picture>
+
+    <section>
+      <div class="day-forecast">
+        <div class="forecast">
+          <h2>Five Day Forcast</h2>
+        </div>
+        <div class="forecast-grid">
+          <div class="grids">
+            <h3>Monday</h3>
+            <img src="img/rsz_1rsz_weather_2.jpg" alt="sunny">
+            <p>30&deg;C</p>
+          </div>
+
+
+          <div class="grids">
+            <h3>Tuesday</h3>
+            <img src="img/rsz_1rsz_weather_2.jpg" alt="sunny">
+            <p>28&deg;C</p>
+          </div>
+
+
+          <div class="grids">
+            <h3>Wednesday</h3>
+            <img src="img/rsz_1rsz_weather_2.jpg" alt="sunny">
+            <p>20&deg;C</p>
+          </div>
+
+
+          <div class="grids">
+            <h3>Thursday</h3>
+            <img src="img/rsz_1rsz_weather_2.jpg" alt="sunny">
+            <p>32&deg;C</p>
+          </div>
+
+          <div class="grids">
+            <h3>Friday</h3>
+            <img src="img/rsz_1rsz_weather_2.jpg" alt="sunny">
+            <p>33&deg;C</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article">
+      <div class="main">
+        <div>
+          <h2> Article </h2>
+        </div>
+        <Picture class="image"><img src="img/rsz_4rsz_1rsz_close.jpg" alt="close capture"></Picture>
+        <div class="paragraph">
+          <p> The way the global economy manages natural resources deeply influences the Earth’s climate.
+            How we extract these resources and how much we make use of them essentially determines the emissions of
+            greenhouse gases (GHG).
+            How we dispose of the resulting wastes increasingly conditions the ability of nature’s sinks such as soils,
+            forests and oceans to absorb them.
+            Whether we seek to reduce GHG releases by means of mitigation approaches, or we try to secure the
+            sustainability of our food, water, energy and livelihoods through adaptation measures, appropriate
+            management of natural resources
+            lies at the centre of virtually all viable solutions to climate change. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Phasellus interdum sed sem sit amet volutpat. Maecenas eget accumsan neque.
+            Donec quis urna odio. Sed mauris odio, rutrum id neque ut, semper vestibulum arcu. Nulla mattis porttitor
+            nulla a eleifend. In hac habitasse platea dictumst. Etiam tortor elit, dictum cursus ex ut, congue aliquam
+            dolor. Donec ut fermentum odio. Aliquam tempor sodales rutrum. Vivamus cursus, lectus vel lobortis
+            ultricies, odio lacus cursus urna, quis pretium quam elit quis metus. Nulla ut accumsan lorem. Ut nulla
+            odio, vulputate quis ullamcorper sed, dictum ac massa. Nulla mollis dui diam, et porta diam dictum nec.
+            Proin consectetur auctor tempus. Aliquam accumsan vestibulum ipsum egestas tempus. Praesent at mattis lacus.
+
+            Phasellus tempus enim elit, eget sollicitudin sem euismod eget. Morbi ac est porttitor, iaculis tortor vel,
+            tristique elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vivamus eget fringilla nunc, varius hendrerit orci. Aliquam nec scelerisque est, vitae pharetra justo.
+            Vivamus placerat a tellus sit amet hendrerit. Integer mattis pellentesque nibh nec congue. Vestibulum et
+            eros eget turpis viverra mattis. Aliquam erat volutpat. Fusce blandit, neque in cursus molestie, odio nibh
+            molestie nulla, quis porttitor arcu velit et neque. Nam ac erat est. In sed velit ut est dictum tempor.
+            Pellentesque ullamcorper, nunc pharetra congue posuere, metus nulla pellentesque elit, nec vehicula velit
+            neque ut tellus. Cras in vehicula ligula.
+
+            Donec eu consectetur elit. Donec faucibus ac risus et posuere. Curabitur a sem finibus, bibendum sem sed,
+            dignissim sem. Nam pharetra eget sapien ut tristique. In sed vestibulum felis, a dapibus dui. Praesent
+            tristique et orci at imperdiet. Sed quis vehicula orci. In hac habitasse platea dictumst. Integer eget
+            libero eget nisl gravida euismod. Integer eget rutrum neque. Duis et luctus massa, sed vestibulum quam.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="preston">
+      <h2>Contact Information</h2>
+      <div class="mine">
+        <div class="Location">
+          <h3>Location</h3>
+          <p> Location: 23 main Street
+            <br> Freetown-Sierra Leone </p>
+        </div>
+        <div class="telephone">
+          <h3>Contact</h3>
+          <p> contact: +23278816722 </p>
+          <p> Email: kapscalvin@gmail.com</p>
+
+        </div>
+
+        <div class="map">
+          <h3> Map</h3>
+          <img src="img/images/rsz_screenshot_40.jpg" alt="map">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="www.facebook.com"><img src="img/facebook.png" alt="facebook link"></a>
+      <a href="www.youtube.com"><img src="img/youtube.png" alt="youtube link"></a>
+      <a href="www.twitter.com"><img src="img/twitter.png" alt="twitter link"></a>
+    </div>
+    <div class="footer">
+      <p> &copy;| Colebay Kaps Kamanda | 2021 reserved |Last Updated:<span id="lastupdated"></span></p>
+    </div>
+
+    <script src="js/javascript.js"></script>
+    <script src="js/windchill.js"></script>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    background-color: #ccc;
+}
+
+header {
+    background-color:rgb(37, 46, 85);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+}
+
+.placeholder {
+    padding: 2rem 2%;
+    background-color: whitesmoke;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+    
+}
+
+.cards section {
+    background-color: white;
+    padding: 0 1rem .5rem 1rem;
+    background-color: rgb(33, 36, 53);
+    overflow: hidden;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px gray;
+
+}
+
+.cards section:hover{
+    background-color: blueviolet;
+}
+
+
+.cards img {
+    border-radius: 5%;
+    height: 12rem;
+
+    
+}
+footer {
+    background-color:rgb(37, 46, 85);
+    text-align: center;
+    padding: 2rem;
+   color: white;
+   margin-top: 30px;
+   
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 35rem) {
+
+
+
+
+    .cards {
+      
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+
+}
+
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64em) {
+
+
+
+    .cards {
+      
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+    
+
+
+
+
+
+
+
+}

@@ -1,0 +1,44 @@
+table {
+    font-family: sans-serif;
+}
+
+.first {
+    background-color: #7fb9c2 ;
+    color: white;
+}
+
+#second {
+    background-color: #628ca6;
+    color:  white;
+}
+
+.number{ 
+    background-color: #628ca6;
+    color: white;
+}
+
+table, th, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+ tbody tr:nth-child(even) {
+    background-color:#e8fced;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:#cfd4d3;
+}
+
+tfoot td {
+    background-color:  #7fb9c2;
+    color: white;
+}

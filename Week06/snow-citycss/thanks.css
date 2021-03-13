@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;  
+}
+
+.welcome {
+    padding: 0.1rem 2%;
+    background-color: whitesmoke;
+}
+
+.swoncity{
+    padding: 0.5rem 2%;
+   padding-right: 10px;
+}
+
+
+
+header {
+    background-color:rgb(37, 46, 85) ;
+    color: white;
+    margin:0;
+}
+
+.logo {
+    display:block;
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+nav ul.hide {
+    display: block;
+    
+}
+
+
+nav {
+    display: block;
+    
+}
+
+nav ul li a{
+    float: left;
+    border-radius: 10px;
+    border: 1px solid rgb(36, 217, 230);
+    border-radius: 10px;
+    margin: 0 2% 0 0;
+}
+
+
+.ham{
+    display: none;
+}
+
+
+footer{
+    text-align: center;
+    background-color:rgb(37, 46, 85);
+    display: block;
+    border: 1px solid black;
+    padding: .5rem 8%;
+    font-size: medium;
+    margin: 0.5rem auto;
+    color: whitesmoke;
+}
+
+.social img {
+    display: block;
+    float: left;
+    width: 4%;
+    margin: 2px;
+}

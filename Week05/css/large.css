@@ -1,0 +1,57 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64em) {
+
+    nav ul.hide {
+        display: block;
+        
+    }
+
+    nav ul {
+        padding-left: 15rem;
+    }
+
+
+ 
+    nav ul li a{
+        float: left;
+        border: 1px solid rgb(36, 217, 230);
+        border-radius: 40px;
+        margin: 0 4% 0 0;
+        text-align: center;
+        
+    }
+
+.banner {
+    display: block;
+}
+
+section .weather1 {
+    display: block;
+    position: absolute;
+    background-color: rgba(33, 124, 209, 0.959);
+    padding-bottom: 2px;
+}
+
+   section .forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    .grids {
+        border-radius: 20px;
+        border: rgb(13, 77, 70) 1px solid;
+        
+    }
+    
+    section .forecast {
+        display: block;
+         text-align: center;
+     }
+    
+     main, footer {
+         max-width: 75rem;
+     }
+
+
+} /*end large */

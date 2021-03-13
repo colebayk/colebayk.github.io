@@ -1,0 +1,91 @@
+@media only screen and (min-width: 34rem) {
+
+    header {
+        margin-bottom:0px;
+    }
+    
+    
+    
+    nav ul.hide {
+        display: grid;
+        grid-template-columns: 100px  100px  100px  100px  100px 100px;
+        grid-gap: 0px; 
+        justify-content: left;
+        
+    }
+    
+    
+    nav {
+        display: block;
+        margin-top: -5px;
+        border-radius: 20px;
+    }
+
+    nav ul li a{
+        text-align: center;
+        border-bottom: none;
+        
+    }
+
+    .ham{
+        display: none;
+    }
+
+    .banner {
+        display: block;
+        padding: .5rem 1%;
+    }
+
+    .logo {
+        padding-left:0px;
+    }
+
+    .article {
+        grid-template-columns: 400px 300px;
+    }
+
+    .article {
+        padding: 0.5rem 4%;
+    }
+
+    .contact {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    
+    .contact {
+        padding: .5rem 4%;
+    }
+
+    .address {
+        text-align: left;}
+
+    .address:hover{
+        background-color: blanchedalmond;
+    }
+
+    
+   
+    .info:hover{
+        background-color: blanchedalmond;
+    }
+
+    .map img {
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+
+
+    .map:hover{
+        background-color: blanchedalmond;
+    }
+    
+    #cards div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #cards div:nth-child(2) figure {grid-column: 1; grid-row: 1;}
+    #cards div:nth-child(2) section {grid-column: 2;}
+    
+}    

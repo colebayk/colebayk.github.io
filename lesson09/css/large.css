@@ -1,0 +1,27 @@
+@media only screen and (min-width: 64rem) {
+
+
+    .holder {
+        padding: .5rem 8%;
+    }
+ 
+    nav ul.hide {
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    justify-content: center;
+}
+
+.banner {
+    padding: .5rem 5%;
+}
+
+.article {
+    grid-template-columns: 750px 300px;
+}
+
+.contact {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#cards {display: grid; grid-template-columns: 1fr 1fr 1fr;}
+#cards div {display: block;}
+}

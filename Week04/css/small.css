@@ -1,0 +1,115 @@
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+    background-color:rgba(64, 224, 208, 0.384);
+    font-family: sans-serif;
+    
+}
+
+
+header {
+    background-color:  rgb(37, 63, 177) ;
+    color: whitesmoke;
+    padding: 1rem;
+    margin:0;
+    text-align: center;
+}
+
+.header {
+    display: block;
+    float:left;
+}
+
+.header2 {
+    display: block;
+}
+
+
+nav {
+    background-color: yellowgreen;
+
+}
+
+nav button  {
+    color: rgba(0, 0, 0, 0.233);
+    float:right;
+    padding:.2rem;
+    color:turquoise
+}
+
+nav ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem 2%;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav ul.hide {
+    display:none;
+    
+}
+
+main {
+    background-color: whitesmoke;
+    padding:1rem;
+}
+
+main h2 {
+    text-align: center;
+    color:blue;
+}
+.holders div {
+    text-align: center;
+  background-color: rgb(37, 63, 177);
+  display: block;
+  border: 1px solid black;
+  padding: 1.5rem;
+  font-size: medium;
+  font-weight: 700;
+  max-width: 60%;
+  margin: 0.5rem auto;
+  color: whitesmoke;
+}
+footer{
+    text-align: center;
+    background-color: rgb(37, 63, 177);
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: medium;
+    max-width: 80%;
+    margin: 0.5rem auto;
+    color: whitesmoke;
+}
+
+.social img {
+    display: block;
+    float: left;
+    width: 3%;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
