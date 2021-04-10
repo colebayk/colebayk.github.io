@@ -130,7 +130,7 @@ section img {
 
 .card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 300px;
     grid-template-rows: 250px 8rem 5rem;
     grid-template-areas: "image" "title" "info";
     border-radius: 1rem;

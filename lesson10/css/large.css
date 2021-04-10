@@ -37,7 +37,7 @@
         max-width: 80rem;
     }
 
-   section .forecast-grid {
+   .forecast_grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
@@ -49,9 +49,10 @@
         
     }
     
-    section .forecast {
-        display: block;
-         text-align: center;
+ .forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-gap: 40px;
      }
     
      
