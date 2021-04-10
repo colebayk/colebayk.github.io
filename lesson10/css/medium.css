@@ -25,11 +25,10 @@
         display: none;
     }
 
-   Section .forecast-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
+    .forecast__grid {
+        grid-template-columns: repeat(3, 1fr);  
     }
+
     
     .grids {
         border-radius: 10px;

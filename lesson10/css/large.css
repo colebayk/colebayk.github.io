@@ -36,6 +36,19 @@
     footer {
         max-width: 80rem;
     }
+
+
+
+    .cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        grid-template-columns: 280px;
+        width: 280px;
+    }
+
     
     .forecast__grid div {
         margin: 0;
