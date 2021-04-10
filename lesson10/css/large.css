@@ -36,13 +36,15 @@
     footer {
         max-width: 80rem;
     }
-
-   section.forecast_grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 10px;
-    }
     
+    .forecast__grid div {
+        margin: 0;
+    }
+
+    .forecast__grid {
+        grid-template-columns: repeat(5, 1fr);  
+    }
+
     .grids {
         border-radius: 10px;
         border: rgb(13, 77, 70) 1px solid;
