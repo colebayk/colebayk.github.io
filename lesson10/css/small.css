@@ -101,6 +101,10 @@ section img {
     
 }
 
+.forecast__title {
+    text-align: center;
+}
+
 
 .hero span {
     grid-row: 2/3;
