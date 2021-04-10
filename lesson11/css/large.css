@@ -1,0 +1,95 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64em) {
+
+    nav ul.hide {
+        display: block;
+        
+    }
+
+    nav ul {
+        padding-left: 15rem;
+    }
+
+
+ 
+    nav ul li a{
+        float: left;
+        border: 1px solid rgb(36, 217, 230);
+        border-radius: 40px;
+        margin: 0 4% 0 0;
+       
+        text-align: center;
+        
+    }
+
+ .active {
+    background-color: rgb(52, 150, 60);
+
+}
+
+
+    .placeholder {
+        
+            padding: 2rem 12%; 
+    }
+
+    footer {
+        max-width: 80rem;
+    }
+
+
+
+    .cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        grid-template-columns: 280px;
+        width: 280px;
+    }
+
+    
+    .forecast__grid div {
+        margin: 0;
+    }
+
+    .forecast__grid {
+        grid-template-columns: repeat(5, 1fr);  
+    }
+
+    .grids {
+        border-radius: 10px;
+        border: rgb(13, 77, 70) 1px solid;
+        
+    }
+
+
+    section .forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .grids {
+        border-radius: 10px;
+        border: rgb(13, 77, 70) 1px solid;
+        
+    }
+    
+    section .forecast {
+        display: block;
+         text-align: center;
+     }
+    
+ section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         grid-gap: 40px;
+     }
+    
+     
+    
+
+
+} /*end large */

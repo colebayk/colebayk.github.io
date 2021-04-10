@@ -1,0 +1,31 @@
+@media only screen and (min-width: 64em) {
+
+
+
+    .placeholder {
+        margin-right: 2%;
+}
+
+
+nav ul {
+    padding-left: 15rem;
+}
+
+.images {
+    grid-template-columns: 300px 300px 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,58 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    nav ul.hide {
+        display: block;
+        
+    }
+    
+    
+    nav {
+        display: block;
+        
+    }
+
+    nav ul li a{
+        float: left;
+        border-radius: 10px;
+        border: 1px solid rgb(36, 217, 230);
+        border-radius: 10px;
+        margin: 0 2% 0 0;
+    }
+
+
+    .ham{
+        display: none;
+    }
+
+   Section .forecast-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .grids {
+        border-radius: 10px;
+        border: rgb(13, 77, 70) 1px solid;
+        
+    }
+    
+    section .forecast {
+        display: block;
+         text-align: center;
+     }
+     .active {
+        background-color: rgb(68, 182, 77);
+    }
+
+
+
+    .map {
+        display: block;
+        border-radius: 20px;
+        padding: 1rem;
+        background-color: powderblue;
+        
+    }
+ 
+} /*end medium */
